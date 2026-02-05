@@ -1,0 +1,85 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fiche — Contacts et favoris</title><style>:root{--font-size:18px;--line-height:1.55;--max-width:880px;--bg:#fff;--ink:#111;--muted:#444;--card:#f6f7f8;--border:#d0d7de;--accent:#0a66c2}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif}
+main{max-width:var(--max-width);margin:24px auto;padding:0 16px;font-size:var(--font-size);line-height:var(--line-height)}
+h1{font-size:32px;line-height:1.2;margin:8px 0 6px}h2{font-size:22px;margin:18px 0 10px}h3{font-size:19px;margin:14px 0 8px}
+p{margin:10px 0;color:var(--muted)}.small{font-size:.95em}
+kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;background:#fff;border:1px solid var(--border);border-bottom-width:2px;border-radius:6px;padding:1px 6px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin:12px 0}
+.grid{display:grid;gap:12px}@media(min-width:760px){.grid-2{grid-template-columns:1fr 1fr}}
+ol,ul{margin:8px 0 8px 22px}li{margin:6px 0}.hr{height:1px;background:var(--border);margin:16px 0}
+.badge{display:inline-block;background:#fff;border:1px solid var(--border);border-radius:999px;padding:4px 10px;margin-right:8px}
+.tip{border-left:5px solid var(--accent);padding-left:12px}.warn{border-left:5px solid #b54708;padding-left:12px}
+.headerbar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.headerbar .inner{max-width:var(--max-width);margin:0 auto;padding:10px 16px;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.btn{appearance:none;border:1px solid var(--border);background:#fff;color:var(--ink);border-radius:10px;padding:10px 12px;cursor:pointer;font-size:16px}
+.btn:active{transform:translateY(1px)}.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.footer{margin:26px 0 40px;color:#666;font-size:.95em}
+@media print{.headerbar,.no-print{display:none !important}main{margin:0;max-width:none}.card{break-inside:avoid}}
+</style></head><body>
+<div class="headerbar no-print" role="banner"><div class="inner"><div><div class="small" style="color:#555">Fiche pratique</div><div style="font-weight:700">Ajouter un contact + favori</div></div>
+<div class="controls"><button class="btn" id="fontMinus" title="Réduire la taille du texte">A−</button><button class="btn" id="fontPlus" title="Agrandir la taille du texte">A+</button>
+<button class="btn" onclick="window.print()" title="Imprimer ou enregistrer en PDF">Imprimer / PDF</button></div></div></div>
+<main><h1>Ajouter un contact + favori</h1><p class="small">Appeler en 2 clics grâce aux favoris.</p>
+<div class="card"><span class="badge">Objectif</span> <strong>Ajouter un contact</strong> et le mettre en <strong>favori</strong> pour appeler en 2 clics.</div>
+
+<div class="card">
+  <h2>Ajouter un contact (général)</h2>
+  <ol>
+    <li>Ouvre l’app <strong>Téléphone</strong> ou <strong>Contacts</strong>.</li>
+    <li>Appuie sur <strong>+</strong> (Ajouter).</li>
+    <li>Entre <strong>Nom</strong> + <strong>Numéro</strong>.</li>
+    <li>Enregistre.</li>
+  </ol>
+  <p class="tip"><strong>Astuce :</strong> mets “FILLE – Lucie” ou “MEDECIN – Dr …” pour les retrouver plus vite.</p>
+</div>
+
+<div class="grid grid-2">
+  <div class="card">
+    <h2>iPhone : mettre en favori</h2>
+    <ol>
+      <li>Ouvre <strong>Téléphone</strong>.</li>
+      <li>Va sur <strong>Favoris</strong>.</li>
+      <li>Appuie sur <strong>+</strong>.</li>
+      <li>Choisis le contact et le numéro.</li>
+    </ol>
+  </div>
+  <div class="card">
+    <h2>Android : mettre en favori</h2>
+    <ol>
+      <li>Ouvre <strong>Contacts</strong> (ou Téléphone).</li>
+      <li>Ouvre la fiche du contact.</li>
+      <li>Appuie sur l’<strong>étoile</strong> ⭐ (Favori).</li>
+    </ol>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Appeler un favori</h2>
+  <ul>
+    <li>Ouvre <strong>Téléphone</strong> → <strong>Favoris</strong> → touche le nom.</li>
+    <li>Option : ajouter un <strong>widget</strong> sur l’écran d’accueil (certains téléphones).</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Si ça ne marche pas</h2>
+  <ul>
+    <li><strong>Je ne vois pas Favoris</strong> : cherche l’onglet “Favoris” ou l’⭐ dans Contacts.</li>
+    <li><strong>Le contact n’apparaît pas</strong> : vérifie qu’il est bien enregistré et pas dans la SIM seulement.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Mini-exercices</h2>
+  <ol>
+    <li>Ajoute un contact “Test”.</li>
+    <li>Mets-le en favori ⭐.</li>
+    <li>Appelle-le (ou appelle un proche) depuis Favoris.</li>
+  </ol>
+</div>
+<div class="footer">Astuce : fais une première fois avec un proche, puis refais seul(e) le lendemain.</div></main>
+<script>(function(){const r=document.documentElement;function s(px){r.style.setProperty('--font-size',px+'px');localStorage.setItem('gp_font_size',String(px))}
+const saved=Number(localStorage.getItem('gp_font_size'));if(saved&&saved>=16&&saved<=26)s(saved);
+const m=document.getElementById('fontMinus'),p=document.getElementById('fontPlus');
+if(m&&p){m.addEventListener('click',()=>{const c=parseInt(getComputedStyle(r).getPropertyValue('--font-size'))||18;s(Math.max(16,c-2))});
+p.addEventListener('click',()=>{const c=parseInt(getComputedStyle(r).getPropertyValue('--font-size'))||18;s(Math.min(26,c+2))});}})();</script></body></html>
