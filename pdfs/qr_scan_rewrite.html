@@ -1,0 +1,38 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fiche — Scanner un QR code</title><style>:root{--font-size:18px;--line-height:1.55;--max-width:880px;--bg:#fff;--ink:#111;--muted:#444;--card:#f6f7f8;--border:#d0d7de;--accent:#0a66c2}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif}
+main{max-width:var(--max-width);margin:24px auto;padding:0 16px;font-size:var(--font-size);line-height:var(--line-height)}
+h1{font-size:32px;line-height:1.2;margin:8px 0 6px}h2{font-size:22px;margin:18px 0 10px}
+p{margin:10px 0;color:var(--muted)}.small{font-size:.95em}
+kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;background:#fff;border:1px solid var(--border);border-bottom-width:2px;border-radius:6px;padding:1px 6px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin:12px 0}
+.grid{display:grid;gap:12px}@media(min-width:760px){.grid-2{grid-template-columns:1fr 1fr}}
+ol,ul{margin:8px 0 8px 22px}li{margin:6px 0}.hr{height:1px;background:var(--border);margin:16px 0}
+.badge{display:inline-block;background:#fff;border:1px solid var(--border);border-radius:999px;padding:4px 10px;margin-right:8px}
+.tip{border-left:5px solid var(--accent);padding-left:12px}.warn{border-left:5px solid #b54708;padding-left:12px}
+.headerbar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.headerbar .inner{max-width:var(--max-width);margin:0 auto;padding:10px 16px;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.btn{appearance:none;border:1px solid var(--border);background:#fff;color:var(--ink);border-radius:10px;padding:10px 12px;cursor:pointer;font-size:16px}
+.btn:active{transform:translateY(1px)}.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.footer{margin:26px 0 40px;color:#666;font-size:.95em}
+@media print{.headerbar,.no-print{display:none !important}main{margin:0;max-width:none}.card{break-inside:avoid}}
+</style></head><body>
+<div class="headerbar no-print" role="banner"><div class="inner"><div><div class="small" style="color:#555">Fiche pratique</div><div style="font-weight:700">Scanner un QR code</div></div>
+<div class="controls"><button class="btn" id="fontMinus" title="Réduire la taille du texte">A−</button><button class="btn" id="fontPlus" title="Agrandir la taille du texte">A+</button>
+<button class="btn" onclick="window.print()" title="Imprimer ou enregistrer en PDF">Imprimer / PDF</button></div></div></div>
+<main><h1>Scanner un QR code</h1><p class="small">Billets, menus, Wi‑Fi : scanner sans risque.</p>
+<div class="card"><span class="badge">Objectif</span> <strong>Scanner un QR code</strong> (billets, menu, Wi‑Fi, lien) en toute sécurité.</div>
+<div class="grid grid-2">
+  <div class="card"><h2>Le plus simple</h2><p>Souvent, il suffit d’ouvrir <strong>Appareil photo</strong> et de viser le QR code.</p><ol><li>Ouvre <strong>Appareil photo</strong>.</li><li>Vise le QR code (sans bouger).</li><li>Un lien apparaît → appuie dessus.</li></ol></div>
+  <div class="card"><h2>Si ça ne marche pas</h2><ul><li>Plus de lumière, ou rapproche-toi un peu.</li><li>Nettoie l’objectif (tissu doux).</li><li>Sur certains téléphones : option “Scanner QR”.</li></ul></div>
+</div>
+<div class="card"><h2>QR code Wi‑Fi</h2><ol><li>Scanne le QR code.</li><li>Appuie sur <strong>Rejoindre le Wi‑Fi</strong> (si proposé).</li><li>Vérifie le <strong>nom du réseau</strong> avant d’accepter.</li></ol></div>
+<div class="card"><h2>Billets / menus</h2><ol><li>Scanne avec l’appareil photo.</li><li>Appuie sur le lien.</li><li>Lis le nom du site : s’il est bizarre, n’insiste pas.</li></ol></div>
+<div class="card"><h2>Sécurité (très important)</h2><p class="warn"><strong>Un QR code peut mener à un faux site</strong>. Un QR code collé par-dessus un autre = méfiance.</p>
+<ul><li>Regarde l’adresse avant de valider (site officiel si possible).</li><li>Ne donne jamais : mot de passe, code SMS, infos bancaires.</li><li>Si on te demande de payer alors que ce n’était pas prévu : <strong>stop</strong> et demande de l’aide.</li></ul></div>
+<div class="card"><h2>Mini-exercices</h2><ol><li>Scanne un QR code “officiel”.</li><li>Vérifie que tu vois un lien avant de cliquer.</li><li>Si c’est louche : ferme et demande de l’aide.</li></ol></div>
+<div class="footer">Astuce : sur une version imprimée, surligne les boutons importants (caméra, micro, envoyer).</div></main>
+<script>(function(){const r=document.documentElement;function s(px){r.style.setProperty('--font-size',px+'px');localStorage.setItem('gp_font_size',String(px))}
+const saved=Number(localStorage.getItem('gp_font_size'));if(saved&&saved>=16&&saved<=26)s(saved);
+const m=document.getElementById('fontMinus'),p=document.getElementById('fontPlus');
+if(m&&p){m.addEventListener('click',()=>{const c=parseInt(getComputedStyle(r).getPropertyValue('--font-size'))||18;s(Math.max(16,c-2))});
+p.addEventListener('click',()=>{const c=parseInt(getComputedStyle(r).getPropertyValue('--font-size'))||18;s(Math.min(26,c+2))});}})();</script></body></html>

@@ -1,0 +1,91 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fiche — Reconnaître une arnaque</title><style>:root{--font-size:18px;--line-height:1.55;--max-width:880px;--bg:#fff;--ink:#111;--muted:#444;--card:#f6f7f8;--border:#d0d7de;--accent:#0a66c2}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif}
+main{max-width:var(--max-width);margin:24px auto;padding:0 16px;font-size:var(--font-size);line-height:var(--line-height)}
+h1{font-size:32px;line-height:1.2;margin:8px 0 6px}h2{font-size:22px;margin:18px 0 10px}h3{font-size:19px;margin:14px 0 8px}
+p{margin:10px 0;color:var(--muted)}.small{font-size:.95em}
+kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;background:#fff;border:1px solid var(--border);border-bottom-width:2px;border-radius:6px;padding:1px 6px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin:12px 0}
+.grid{display:grid;gap:12px}@media(min-width:760px){.grid-2{grid-template-columns:1fr 1fr}}
+ol,ul{margin:8px 0 8px 22px}li{margin:6px 0}.hr{height:1px;background:var(--border);margin:16px 0}
+.badge{display:inline-block;background:#fff;border:1px solid var(--border);border-radius:999px;padding:4px 10px;margin-right:8px}
+.tip{border-left:5px solid var(--accent);padding-left:12px}.warn{border-left:5px solid #b54708;padding-left:12px}
+.headerbar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.headerbar .inner{max-width:var(--max-width);margin:0 auto;padding:10px 16px;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.btn{appearance:none;border:1px solid var(--border);background:#fff;color:var(--ink);border-radius:10px;padding:10px 12px;cursor:pointer;font-size:16px}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:active{transform:translateY(1px)}.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.footer{margin:26px 0 40px;color:#666;font-size:.95em}
+@media print{.headerbar,.no-print{display:none !important}main{margin:0;max-width:none}.card{break-inside:avoid}}
+</style></head><body>
+<div class="headerbar no-print" role="banner"><div class="inner"><div><div class="small" style="color:#555">Fiche pratique</div><div style="font-weight:700">Reconnaître une arnaque</div></div>
+<div class="controls"><button class="btn" id="fontMinus" title="Réduire la taille du texte">A−</button><button class="btn" id="fontPlus" title="Agrandir la taille du texte">A+</button>
+<button class="btn" onclick="window.print()" title="Imprimer ou enregistrer en PDF">Imprimer / PDF</button></div></div></div>
+<main><h1>Reconnaître une arnaque</h1><p class="small">SMS colis, banque/impôts, faux proches : repérer et réagir.</p>
+<div class="card"><span class="badge">Objectif</span> <strong>Reconnaître une arnaque</strong> (SMS colis, “banque”, “impôts”, “petit-fils en urgence”) et savoir quoi faire.</div>
+
+<div class="card">
+  <h2>Les 6 signes qui doivent alerter</h2>
+  <ul>
+    <li><strong>Urgence</strong> : “vite”, “dernière chance”, “sinon sanction”.</li>
+    <li><strong>Demande d’argent</strong> : virement, carte cadeau, crypto, mandat.</li>
+    <li><strong>Demande de codes</strong> : code SMS, code de validation, mot de passe.</li>
+    <li><strong>Lien bizarre</strong> : adresse étrange, fautes, chiffres, site inconnu.</li>
+    <li><strong>Numéro inconnu</strong> : ou un “+” étranger inattendu.</li>
+    <li><strong>Pression émotionnelle</strong> : “c’est moi”, “je suis en danger”, “ne le dis à personne”.</li>
+  </ul>
+</div>
+
+<div class="grid grid-2">
+  <div class="card">
+    <h2>Arnaque “colis” (SMS)</h2>
+    <ul>
+      <li>“Votre colis est bloqué, payez 1–2€”.</li>
+      <li>Souvent un lien vers un faux site.</li>
+    </ul>
+    <p class="tip"><strong>À faire :</strong> ne clique pas. Va sur le site officiel du transporteur (ou demande à un proche).</p>
+  </div>
+  <div class="card">
+    <h2>Arnaque “banque / impôts”</h2>
+    <ul>
+      <li>“Compte bloqué”, “remboursement”, “mise à jour”.</li>
+      <li>Ils demandent tes infos ou un code.</li>
+    </ul>
+    <p class="tip"><strong>À faire :</strong> raccroche. Rappelle via le numéro officiel (sur un relevé ou site officiel).</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Arnaque “petit-fils en urgence”</h2>
+  <p>Exemple : “Coucou mamie/papi, j’ai changé de numéro. J’ai un problème, peux-tu m’envoyer de l’argent ?”</p>
+  <ol>
+    <li><strong>Stop</strong> : ne réponds pas tout de suite.</li>
+    <li><strong>Vérifie</strong> : appelle le vrai numéro de la personne (ancien contact).</li>
+    <li>Si pas sûr : appelle un autre proche (parent, frère/sœur) pour confirmer.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>Que faire si tu as cliqué / répondu ?</h2>
+  <ul>
+    <li><strong>Ne donne aucun code</strong> (SMS, banque, WhatsApp).</li>
+    <li><strong>Ferme la page</strong> et ne valide rien.</li>
+    <li>Préviens un proche.</li>
+    <li>Si tu as donné des infos bancaires : appelle ta banque immédiatement.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Réflexe simple (règle des 30 secondes)</h2>
+  <p class="warn"><strong>Si c’est urgent et ça demande argent / code / mot de passe :</strong> c’est presque toujours une arnaque.</p>
+  <ol>
+    <li>Tu fais une pause.</li>
+    <li>Tu vérifies via un numéro officiel ou un proche.</li>
+    <li>Tu décides après.</li>
+  </ol>
+</div>
+<div class="footer">Conseil : en cas de doute, <strong>ne réponds pas</strong> et appelle un proche.</div></main>
+<script>(function(){const r=document.documentElement;function s(px){r.style.setProperty('--font-size',px+'px');localStorage.setItem('gp_font_size',String(px))}
+const saved=Number(localStorage.getItem('gp_font_size'));if(saved&&saved>=16&&saved<=26)s(saved);
+const m=document.getElementById('fontMinus'),p=document.getElementById('fontPlus');
+if(m&&p){m.addEventListener('click',()=>{const c=parseInt(getComputedStyle(r).getPropertyValue('--font-size'))||18;s(Math.max(16,c-2))});
+p.addEventListener('click',()=>{const c=parseInt(getComputedStyle(r).getPropertyValue('--font-size'))||18;s(Math.min(26,c+2))});}})();</script></body></html>

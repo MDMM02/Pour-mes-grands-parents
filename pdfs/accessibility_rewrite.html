@@ -1,0 +1,88 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fiche — Accessibilité</title><style>:root{--font-size:18px;--line-height:1.55;--max-width:880px;--bg:#fff;--ink:#111;--muted:#444;--card:#f6f7f8;--border:#d0d7de;--accent:#0a66c2}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif}
+main{max-width:var(--max-width);margin:24px auto;padding:0 16px;font-size:var(--font-size);line-height:var(--line-height)}
+h1{font-size:32px;line-height:1.2;margin:8px 0 6px}h2{font-size:22px;margin:18px 0 10px}h3{font-size:19px;margin:14px 0 8px}
+p{margin:10px 0;color:var(--muted)}.small{font-size:.95em}
+kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;background:#fff;border:1px solid var(--border);border-bottom-width:2px;border-radius:6px;padding:1px 6px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin:12px 0}
+.grid{display:grid;gap:12px}@media(min-width:760px){.grid-2{grid-template-columns:1fr 1fr}}
+ol,ul{margin:8px 0 8px 22px}li{margin:6px 0}.hr{height:1px;background:var(--border);margin:16px 0}
+.badge{display:inline-block;background:#fff;border:1px solid var(--border);border-radius:999px;padding:4px 10px;margin-right:8px}
+.tip{border-left:5px solid var(--accent);padding-left:12px}.warn{border-left:5px solid #b54708;padding-left:12px}
+.headerbar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.headerbar .inner{max-width:var(--max-width);margin:0 auto;padding:10px 16px;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.btn{appearance:none;border:1px solid var(--border);background:#fff;color:var(--ink);border-radius:10px;padding:10px 12px;cursor:pointer;font-size:16px}
+.btn:active{transform:translateY(1px)}.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.footer{margin:26px 0 40px;color:#666;font-size:.95em}
+@media print{.headerbar,.no-print{display:none !important}main{margin:0;max-width:none}.card{break-inside:avoid}}
+</style></head><body>
+<div class="headerbar no-print" role="banner"><div class="inner"><div><div class="small" style="color:#555">Fiche pratique</div><div style="font-weight:700">Agrandir le texte / Loupe</div></div>
+<div class="controls"><a href="Pour-mes-grands-parents/fiches.html" class="btn">← Accueil</a><button class="btn" id="fontMinus" title="Réduire la taille du texte">A−</button><button class="btn" id="fontPlus" title="Agrandir la taille du texte">A+</button>
+<button class="btn" onclick="window.print()" title="Imprimer ou enregistrer en PDF">Imprimer / PDF</button></div></div></div>
+<main><h1>Agrandir le texte / Loupe</h1><p class="small">Rendre le téléphone plus lisible et plus simple.</p>
+<div class="card"><span class="badge">Objectif</span> <strong>Agrandir le texte</strong>, activer la <strong>loupe</strong> et quelques options d’accessibilité.</div>
+
+<div class="grid grid-2">
+  <div class="card">
+    <h2>iPhone : agrandir le texte</h2>
+    <ol>
+      <li>Réglages → <strong>Affichage et luminosité</strong>.</li>
+      <li><strong>Taille du texte</strong> → glisse le curseur.</li>
+      <li>Option : <strong>Texte en gras</strong>.</li>
+    </ol>
+  </div>
+  <div class="card">
+    <h2>Android : agrandir le texte</h2>
+    <ol>
+      <li>Paramètres → <strong>Affichage</strong>.</li>
+      <li><strong>Taille de police</strong> (ou “Taille du texte”).</li>
+      <li>Option : <strong>Taille d’affichage</strong> (icônes plus grandes).</li>
+    </ol>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Loupe / zoom (très utile)</h2>
+  <div class="grid grid-2">
+    <div class="card" style="background:#fff">
+      <h3>iPhone</h3>
+      <ol>
+        <li>Réglages → <strong>Accessibilité</strong>.</li>
+        <li><strong>Loupe</strong> → activer.</li>
+        <li>Ensuite : triple-clic bouton latéral pour l’ouvrir (selon réglage).</li>
+      </ol>
+    </div>
+    <div class="card" style="background:#fff">
+      <h3>Android</h3>
+      <ol>
+        <li>Paramètres → <strong>Accessibilité</strong>.</li>
+        <li><strong>Agrandissement</strong> / <strong>Loupe</strong>.</li>
+        <li>Activer le raccourci (bouton accessibilité).</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Autres options pratiques</h2>
+  <ul>
+    <li><strong>Contraste</strong> / “Amélioration visibilité”.</li>
+    <li><strong>Lecture à voix haute</strong> (selon téléphone).</li>
+    <li><strong>Son</strong> : augmenter le volume, activer “Aides auditives” si besoin.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Mini-exercices</h2>
+  <ol>
+    <li>Agrandis le texte d’un cran.</li>
+    <li>Active la loupe, puis teste-la sur une petite écriture.</li>
+    <li>Remets un réglage si c’est trop grand.</li>
+  </ol>
+</div>
+<div class="footer">Astuce : fais une première fois avec un proche, puis refais seul(e) le lendemain.</div></main>
+<script>(function(){const r=document.documentElement;function s(px){r.style.setProperty('--font-size',px+'px');localStorage.setItem('gp_font_size',String(px))}
+const saved=Number(localStorage.getItem('gp_font_size'));if(saved&&saved>=16&&saved<=26)s(saved);
+const m=document.getElementById('fontMinus'),p=document.getElementById('fontPlus');
+if(m&&p){m.addEventListener('click',()=>{const c=parseInt(getComputedStyle(r).getPropertyValue('--font-size'))||18;s(Math.max(16,c-2))});
+p.addEventListener('click',()=>{const c=parseInt(getComputedStyle(r).getPropertyValue('--font-size'))||18;s(Math.min(26,c+2))});}})();</script></body></html>

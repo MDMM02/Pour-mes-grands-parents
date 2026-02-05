@@ -1,0 +1,108 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fiche — Installer / supprimer une app</title><style>:root{--font-size:18px;--line-height:1.55;--max-width:880px;--bg:#fff;--ink:#111;--muted:#444;--card:#f6f7f8;--border:#d0d7de;--accent:#0a66c2}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif}
+main{max-width:var(--max-width);margin:24px auto;padding:0 16px;font-size:var(--font-size);line-height:var(--line-height)}
+h1{font-size:32px;line-height:1.2;margin:8px 0 6px}h2{font-size:22px;margin:18px 0 10px}h3{font-size:19px;margin:14px 0 8px}
+p{margin:10px 0;color:var(--muted)}.small{font-size:.95em}
+kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;background:#fff;border:1px solid var(--border);border-bottom-width:2px;border-radius:6px;padding:1px 6px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin:12px 0}
+.grid{display:grid;gap:12px}@media(min-width:760px){.grid-2{grid-template-columns:1fr 1fr}}
+ol,ul{margin:8px 0 8px 22px}li{margin:6px 0}.hr{height:1px;background:var(--border);margin:16px 0}
+.badge{display:inline-block;background:#fff;border:1px solid var(--border);border-radius:999px;padding:4px 10px;margin-right:8px}
+.tip{border-left:5px solid var(--accent);padding-left:12px}.warn{border-left:5px solid #b54708;padding-left:12px}
+.headerbar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.headerbar .inner{max-width:var(--max-width);margin:0 auto;padding:10px 16px;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.btn{appearance:none;border:1px solid var(--border);background:#fff;color:var(--ink);border-radius:10px;padding:10px 12px;cursor:pointer;font-size:16px}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:active{transform:translateY(1px)}.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.footer{margin:26px 0 40px;color:#666;font-size:.95em}
+@media print{.headerbar,.no-print{display:none !important}main{margin:0;max-width:none}.card{break-inside:avoid}}
+</style></head><body>
+<div class="headerbar no-print" role="banner"><div class="inner"><div><div class="small" style="color:#555">Fiche pratique</div><div style="font-weight:700">Installer / supprimer une application</div></div>
+<div class="controls"><button class="btn" id="fontMinus" title="Réduire la taille du texte">A−</button><button class="btn" id="fontPlus" title="Agrandir la taille du texte">A+</button>
+<button class="btn" onclick="window.print()" title="Imprimer ou enregistrer en PDF">Imprimer / PDF</button></div></div></div>
+<main><h1>Installer / supprimer une application</h1><p class="small">Installer en sécurité et éviter les abonnements/pièges.</p>
+<div class="card"><span class="badge">Objectif</span> <strong>Installer</strong> ou <strong>supprimer</strong> une application sans se faire piéger.</div>
+
+<div class="grid grid-2">
+  <div class="card">
+    <h2>Règle d’or</h2>
+    <p class="warn"><strong>N’installe des apps que depuis</strong> l’App Store (iPhone) ou le Play Store (Android).</p>
+    <ul>
+      <li>Ne télécharge pas depuis des sites inconnus.</li>
+      <li>Évite les pop-ups “Votre téléphone est infecté”.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>Avant d’installer</h2>
+    <ul>
+      <li>Vérifie le <strong>nom</strong> de l’app et l’éditeur.</li>
+      <li>Regarde la <strong>note</strong> et quelques avis (sans y passer 30 minutes).</li>
+      <li>Méfiance si l’app demande des permissions bizarres (SMS, contacts…) sans raison.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Installer sur iPhone</h2>
+  <ol>
+    <li>Ouvre l’<strong>App Store</strong>.</li>
+    <li>Recherche l’application (ex. “WhatsApp”).</li>
+    <li>Appuie sur <strong>Obtenir</strong> / <strong>Installer</strong>.</li>
+    <li>Si demandé : Face ID / Touch ID / mot de passe Apple.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>Installer sur Android</h2>
+  <ol>
+    <li>Ouvre le <strong>Play Store</strong>.</li>
+    <li>Recherche l’application.</li>
+    <li>Appuie sur <strong>Installer</strong>.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>Supprimer une application</h2>
+  <div class="grid grid-2">
+    <div class="card" style="background:#fff">
+      <h3>iPhone</h3>
+      <ol>
+        <li>Reste appuyé sur l’icône de l’app.</li>
+        <li>Choisis <strong>Supprimer l’app</strong>.</li>
+        <li>Confirme.</li>
+      </ol>
+    </div>
+    <div class="card" style="background:#fff">
+      <h3>Android</h3>
+      <ol>
+        <li>Reste appuyé sur l’icône.</li>
+        <li>Choisis <strong>Désinstaller</strong>.</li>
+        <li>Confirme.</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Éviter les pièges</h2>
+  <ul>
+    <li>Si une app demande de <strong>payer</strong> alors que tu ne voulais pas : ferme et demande de l’aide.</li>
+    <li>Les “nettoyeurs miracles” et “antivirus magiques” sont souvent inutiles.</li>
+    <li>Ne valide pas d’abonnement sans comprendre (prix par semaine/mois).</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Mini-exercices</h2>
+  <ol>
+    <li>Ouvre l’App Store/Play Store et cherche “WhatsApp”.</li>
+    <li>Regarde le nom de l’éditeur et la note.</li>
+    <li>Repère où se trouve le bouton “Désinstaller / Supprimer”.</li>
+  </ol>
+</div>
+<div class="footer">Conseil : en cas de doute, <strong>ne réponds pas</strong> et appelle un proche.</div></main>
+<script>(function(){const r=document.documentElement;function s(px){r.style.setProperty('--font-size',px+'px');localStorage.setItem('gp_font_size',String(px))}
+const saved=Number(localStorage.getItem('gp_font_size'));if(saved&&saved>=16&&saved<=26)s(saved);
+const m=document.getElementById('fontMinus'),p=document.getElementById('fontPlus');
+if(m&&p){m.addEventListener('click',()=>{const c=parseInt(getComputedStyle(r).getPropertyValue('--font-size'))||18;s(Math.max(16,c-2))});
+p.addEventListener('click',()=>{const c=parseInt(getComputedStyle(r).getPropertyValue('--font-size'))||18;s(Math.min(26,c+2))});}})();</script></body></html>
