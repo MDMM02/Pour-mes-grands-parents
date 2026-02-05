@@ -235,6 +235,16 @@ section {
   min-height: 48px;  /* WCAG touch target size */
   min-width: 48px;
 }
+.btn.primary {
+  background: #0a66c2;
+  color: #fff;
+}
+
+section h2 {
+  margin-top: 24px;
+  color: var(--accent);
+}
+
 
 .btn:hover {
   background-color: var(--primary-dark);
