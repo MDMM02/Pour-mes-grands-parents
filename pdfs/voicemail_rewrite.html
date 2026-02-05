@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fiche — Messagerie vocale</title>
+  <style>
+:root{
+  --font-size: 18px;
+  --line-height: 1.55;
+  --max-width: 880px;
+  --bg: #ffffff;
+  --ink: #111;
+  --muted: #444;
+  --card: #f6f7f8;
+  --border: #d0d7de;
+  --accent: #0a66c2;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, Helvetica, sans-serif}
+main{max-width:var(--max-width);margin:24px auto;padding:0 16px;font-size:var(--font-size);line-height:var(--line-height)}
+h1{font-size:32px;line-height:1.2;margin:8px 0 6px}
+h2{font-size:22px;margin:18px 0 10px}
+h3{font-size:19px;margin:14px 0 8px}
+p{margin:10px 0;color:var(--muted)}
+.small{font-size:0.95em}
+kbd{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; background:#fff;border:1px solid var(--border);border-bottom-width:2px;border-radius:6px;padding:1px 6px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 14px;margin:12px 0}
+.grid{display:grid;gap:12px}
+@media (min-width: 760px){.grid-2{grid-template-columns:1fr 1fr}}
+ol,ul{margin:8px 0 8px 22px}
+li{margin:6px 0}
+.hr{height:1px;background:var(--border);margin:16px 0}
+.badge{display:inline-block;background:#fff;border:1px solid var(--border);border-radius:999px;padding:4px 10px;margin-right:8px}
+.tip{border-left:5px solid var(--accent);padding-left:12px}
+.warn{border-left:5px solid #b54708;padding-left:12px}
+.headerbar{
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.headerbar .inner{
+  max-width:var(--max-width); margin:0 auto; padding:10px 16px;
+  display:flex; gap:10px; align-items:center; justify-content:space-between; flex-wrap:wrap;
+}
+.btn{
+  appearance:none; border:1px solid var(--border); background:#fff; color:var(--ink);
+  border-radius:10px; padding:10px 12px; cursor:pointer; font-size:16px;
+}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:active{transform: translateY(1px)}
+.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.footer{margin:26px 0 40px;color:#666;font-size:0.95em}
+@media print{
+  .headerbar,.no-print{display:none !important}
+  main{margin:0;max-width:none}
+  .card{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+  <div class="headerbar no-print" role="banner">
+    <div class="inner">
+      <div>
+        <div class="small" style="color:#555">Fiche pratique</div>
+        <div style="font-weight:700">Écouter sa messagerie vocale</div>
+      </div>
+      <div class="controls">
+        <a href="../fiches.html" class="btn">← Accueil</a>
+        <button class="btn" id="fontMinus" title="Réduire la taille du texte">A−</button>
+        <button class="btn" id="fontPlus" title="Agrandir la taille du texte">A+</button>
+        <button class="btn" onclick="window.print()" title="Imprimer ou enregistrer en PDF">Imprimer / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <h1>Écouter sa messagerie vocale</h1>
+    <p class="small">Accéder aux messages vocaux et gérer les appels manqués.</p>
+
+    
+<div class="card">
+  <span class="badge">Objectif</span>
+  <strong>Écouter</strong>, <strong>rappeler</strong> et <strong>supprimer</strong> des messages vocaux.
+</div>
+
+<div class="card">
+  <h2>Deux types de messagerie</h2>
+  <ul>
+    <li><strong>Messagerie visuelle</strong> : une liste de messages sur l’écran, tu cliques pour écouter.</li>
+    <li><strong>Messagerie “classique”</strong> : tu appelles le répondeur et tu suis une voix qui donne un menu.</li>
+  </ul>
+</div>
+
+<div class="grid grid-2">
+  <div class="card">
+    <h2>Accéder (iPhone)</h2>
+    <ol>
+      <li>Ouvre <strong>Téléphone</strong>.</li>
+      <li>Va sur l’onglet <strong>Messagerie</strong>.</li>
+      <li>Appuie sur un message pour l’écouter.</li>
+    </ol>
+  </div>
+  <div class="card">
+    <h2>Accéder (Android)</h2>
+    <ol>
+      <li>Ouvre l’appli <strong>Téléphone</strong>.</li>
+      <li>Cherche l’onglet <strong>Messagerie</strong> / <strong>Voicemail</strong> (selon le modèle).</li>
+      <li>Sinon, maintiens le chiffre <strong>1</strong> pour appeler le répondeur.</li>
+    </ol>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Actions utiles</h2>
+  <ul>
+    <li><strong>Écouter</strong> : touche ▶️ (ou le message).</li>
+    <li><strong>Mettre sur haut‑parleur</strong> : active l’icône 🔊.</li>
+    <li><strong>Rappeler</strong> : touche le numéro de l’appelant ou le bouton “Rappeler”.</li>
+    <li><strong>Supprimer</strong> : icône 🗑️ / “Supprimer”.</li>
+  </ul>
+  <p class="tip"><strong>Astuce :</strong> si tu n’as pas bien entendu, réécoute une 2ᵉ fois sur haut‑parleur.</p>
+</div>
+
+<div class="card">
+  <h2>Si ça ne marche pas</h2>
+  <ul>
+    <li><strong>Je ne vois pas l’onglet Messagerie</strong> : essaie la messagerie classique (maintenir <strong>1</strong>).</li>
+    <li><strong>On me demande un code (PIN)</strong> : c’est le code de répondeur. Si tu ne l’as pas, contacte l’opérateur.</li>
+    <li><strong>Ça dit “boîte pleine”</strong> : supprime des anciens messages.</li>
+    <li><strong>Je ne reçois aucun message</strong> : vérifie que le téléphone capte bien le réseau et que le répondeur est activé.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Sécurité (important)</h2>
+  <p class="warn"><strong>Méfiance</strong> : un message vocal qui demande un virement, un code SMS ou des infos bancaires.</p>
+  <ul>
+    <li>Si c’est “urgent”, rappelle via un numéro officiel (banque, administration), pas via le message.</li>
+    <li>En cas de doute : appelle un proche.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Petits exercices</h2>
+  <ol>
+    <li>Laisse-toi un message vocal depuis un autre téléphone.</li>
+    <li>Écoute-le, puis rappelle le numéro.</li>
+    <li>Supprime le message pour faire de la place.</li>
+  </ol>
+</div>
+
+
+    <div class="footer">
+      Astuce : si tu imprimes cette fiche, tu peux surligner les étapes les plus utiles pour eux.
+    </div>
+  </main>
+
+  <script>
+(function(){
+  const root = document.documentElement;
+  function setSize(px){
+    root.style.setProperty('--font-size', px + 'px');
+    localStorage.setItem('gp_font_size', String(px));
+  }
+  const saved = Number(localStorage.getItem('gp_font_size'));
+  if(saved && saved>=16 && saved<=26){ setSize(saved); }
+
+  const minus = document.getElementById('fontMinus');
+  const plus = document.getElementById('fontPlus');
+  if(minus && plus){
+    minus.addEventListener('click', ()=> {
+      const current = parseInt(getComputedStyle(root).getPropertyValue('--font-size')) || 18;
+      setSize(Math.max(16, current-2));
+    });
+    plus.addEventListener('click', ()=> {
+      const current = parseInt(getComputedStyle(root).getPropertyValue('--font-size')) || 18;
+      setSize(Math.min(26, current+2));
+    });
+  }
+})();
+</script>
+</body>
+</html>
